@@ -46,28 +46,10 @@ lib/
 In your `main.dart` file, initialize Hive and open a box before running the app:
 
 ```dart
-import 'package:flutter/material.dart';
-import 'package:hive_flutter/adapters.dart';
-import 'package:todo_app/pages/home_page.dart';
 
-void main() async {
   await Hive.initFlutter();
   await Hive.openBox('myBox');
-  runApp(const MyApp());
-}
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
-      theme: ThemeData(primarySwatch: Colors.yellow),
-    );
-  }
-}
 ```
 
 ### 2. Home Page
@@ -201,19 +183,6 @@ class ToDoDataBase {
 Create a dialog box widget for adding new tasks (`dialog_box.dart`):
 
 ```dart
-import 'package:flutter/material.dart';
-import 'package:todo_app/util/my_button.dart';
-
-class DialogBox extends StatelessWidget {
-  final TextEditingController controller;
-  final VoidCallback onSave;
-  final VoidCallback onCancel;
-
-  DialogBox({
-    required this.controller,
-    required this.onSave,
-    required this.onCancel,
-  });
 
   @override
   Widget build(BuildContext context) {
@@ -241,7 +210,6 @@ class DialogBox extends StatelessWidget {
       ),
     );
   }
-}
 ```
 
 ### 5. Custom Button
