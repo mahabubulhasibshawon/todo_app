@@ -1,6 +1,8 @@
 # To-Do App with Flutter and Hive
 
 This is a simple To-Do application built using Flutter. The app utilizes the Hive database to store tasks locally. Users can add, update, and delete tasks.
+## Screens 
+https://github.com/mahabubulhasibshawon/todo_app/assets/96023468/6b159768-c66e-4c97-a27c-48b20257fb2e
 
 ## Features
 - Add new tasks
@@ -315,9 +317,6 @@ class ToDoTile extends StatelessWidget {
 5. Run `flutter pub run build_runner build` to generate necessary files for Hive.
 6. Start the app with `flutter run`.
 
-## Screenshots
-
-Include relevant screenshots here to give users a preview of the app.
 
 ## License
 
